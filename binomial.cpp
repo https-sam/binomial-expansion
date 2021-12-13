@@ -35,7 +35,6 @@ string Binomial_Sigma(int x, int y, int n) {
     {
         if(x != 1) { // x is not 1
             x_co = pow(x, n-j);
-            cout << "x-co is " << x_co << "when x is " << x << "and n-j is " << n-j << endl;
             x_coeffcient.push_back(x_co);
         }
         else {
@@ -96,5 +95,5 @@ int main() {
     if(x >= 10 || y >= 10) cout << "[-] x or y is exceeding 10" << endl;
     else if (n >= 10) cout << "[-] power is exceeding 10" << endl;
     else if(n == 0 || y == 0 || x == 0) cout << "[-] Input cannot be 0" << endl;
-    else cout << Binomial_Sigma(x, y, n) << endl;
+    else cout << "ANS: " << Binomial_Sigma(x, y, n) << endl;
 }
