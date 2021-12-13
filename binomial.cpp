@@ -40,7 +40,7 @@ string Binomial_Sigma(int x, int y, int n) {
         else {
             x_coeffcient.push_back(1);
         }
-        if(y != 1) { // x is not 1
+        if(y != 1) { // y is not 1
             y_co = pow(y, j);
             y_coeffcient.push_back(y_co);
         }
